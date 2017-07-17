@@ -2,8 +2,8 @@
 import jenkins 
 
 
-  server = jenkins.Jenkins('http://52.53.188.33:8080', username='andrewthompson', password='admin')
-  user = serer.get_whoami()
-  target_build = server.build_job('post-action-trigger-build-job')
+  server = jenkins.Jenkins('url', username='andrewthompson', password='password')
+  user = server.get_whoami()
+  target_build = server.build_job($(next))
  
   print ("current user is at:" user) 
